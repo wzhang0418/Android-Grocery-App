@@ -1,7 +1,6 @@
 package com.apolis.groceryapplication1.fragments
 
 import android.content.Context
-import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -15,15 +14,13 @@ import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import com.apolis.groceryapplication1.R
-import com.apolis.groceryapplication1.activities.ProductDetailActivity
 import com.apolis.groceryapplication1.adapters.AdapterProduct
 import com.apolis.groceryapplication1.app.Endpoints
-import com.apolis.groceryapplication1.models.*
+import com.apolis.groceryapplication1.models.Product
+import com.apolis.groceryapplication1.models.ProductResponse
+import com.apolis.groceryapplication1.models.SubCategory
 import com.google.gson.GsonBuilder
-import kotlinx.android.synthetic.main.activity_sub_category.*
-import kotlinx.android.synthetic.main.fragment_product.*
 import kotlinx.android.synthetic.main.fragment_product.view.*
-import kotlinx.android.synthetic.main.fragment_product.view.recycler_view_linear
 
 class SubCategoryFragment : Fragment() {
     private var subId: Int = 0
@@ -33,7 +30,7 @@ class SubCategoryFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
-            subId = it.getInt(Product.PRODUCT_KEY)
+            subId = it.getInt(SubCategory.SUBCATEGORY_KEY)
 
         }
     }

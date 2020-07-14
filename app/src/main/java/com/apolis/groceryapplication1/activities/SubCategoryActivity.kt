@@ -10,7 +10,6 @@ import com.android.volley.toolbox.Volley
 import com.apolis.groceryapplication1.R
 import com.apolis.groceryapplication1.adapters.AdapterFragments
 import com.apolis.groceryapplication1.app.Endpoints
-import com.apolis.groceryapplication1.helpers.toast
 import com.apolis.groceryapplication1.models.Category
 import com.apolis.groceryapplication1.models.SubCategoryResponse
 import com.google.gson.GsonBuilder
