@@ -2,12 +2,23 @@
     android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#fff"
-    android:padding="5dp"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
 
-    <ImageView
-        android:id="@+id/image_view_slider"
+    <include
+        layout="@layout/app_bar"/>
+
+    <FrameLayout
+        android:id="@+id/frame_layout_container"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@+id/tool_bar"/>
+
+
+    <com.custom.sliderimage.logic.SliderImage
+        android:id="@+id/slider_image"
+        android:layout_below="@+id/tool_bar"
         android:layout_width="match_parent"
         android:layout_height="180dp"/>
 
@@ -22,6 +33,6 @@
         android:id="@+id/recycler_view_grid"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/image_view_slider"/>
+        android:layout_below="@+id/frame_layout_container"/>
 
 </RelativeLayout>

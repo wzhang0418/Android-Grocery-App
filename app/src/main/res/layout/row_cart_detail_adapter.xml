@@ -1,0 +1,130 @@
+<RelativeLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_cart_detail"
+        android:layout_marginRight="10dp"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="10dp">
+
+        <ImageView
+            android:id="@+id/image_view_cart_detail"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_launcher_background"
+            android:scaleType="fitXY"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/text_view_name_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textColor="#000"
+        android:textSize="18dp"
+        android:layout_toRightOf="@+id/card_view_cart_detail"/>
+
+    <TextView
+        android:id="@+id/text_view_price_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_name_cart"
+        android:layout_toRightOf="@+id/card_view_cart_detail"
+        android:text="Price"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_view_market_price_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="000.0"
+        android:layout_toRightOf="@id/card_view_cart_detail"
+        android:layout_below="@+id/text_view_price_cart"/>
+
+    <View
+        android:id="@+id/view_line_cart"
+        android:layout_width="35dp"
+        android:layout_height="1dp"
+        android:layout_toRightOf="@+id/card_view_cart_detail"
+        android:layout_below="@+id/text_view_price_cart"
+        android:layout_marginTop="10dp"
+        android:background="#000"/>
+
+    <TextView
+        android:id="@+id/text_view_save_price_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:textColor="@color/colorPink"
+        android:textStyle="italic"
+        android:layout_toRightOf="@+id/text_view_market_price_cart"
+        android:layout_below="@+id/text_view_price_cart"
+        android:layout_marginLeft="16dp"/>
+
+    <ImageButton
+        android:id="@+id/image_button_delete_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:src="@drawable/ic_baseline_delete_24"
+        android:layout_alignParentRight="true"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/button_add_minus_cart"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/view_divider_cart"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/button_minus_cart"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="-"
+            android:textSize="22dp"
+            android:textColor="@color/colorPink"
+            android:background="@drawable/button_border_left"/>
+        <TextView
+            android:id="@+id/text_view_add_quantity_cart"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="1"
+            android:textSize="22dp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:background="@color/colorPink"/>
+        <Button
+            android:id="@+id/button_add_cart"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="+"
+            android:textSize="22dp"
+            android:textColor="@color/colorPink"
+            android:background="@drawable/button_border_right"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_divider_cart"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ddd"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/card_view_cart_detail"/>
+
+
+</RelativeLayout>

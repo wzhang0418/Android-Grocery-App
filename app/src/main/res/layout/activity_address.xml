@@ -1,0 +1,24 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include layout="@layout/app_bar"/>
+
+    <Button
+        android:layout_below="@+id/tool_bar"
+        android:id="@+id/button_add_new_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add New Address"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:background="@drawable/round_corner_button"
+        android:layout_margin="10dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/button_add_new_address"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>

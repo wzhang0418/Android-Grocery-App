@@ -23,6 +23,14 @@ class Endpoints {
         fun getImage(): String{
             return Config.IMAGE_URL
         }
+
+
+        fun getRegisterURL(): String{
+            return Config.REGISTER_URL
+        }
+        fun getLoginURL(): String{
+            return Config.LOGIN_URL
+        }
     }
 
 

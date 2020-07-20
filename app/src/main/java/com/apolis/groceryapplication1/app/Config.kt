@@ -8,5 +8,8 @@ class Config {
         const val SUBCATEGORY_URL = "https://apolis-grocery.herokuapp.com/api/subcategory"
         const val PRODUCT_URL = "https://apolis-grocery.herokuapp.com/api/products"
         const val IMAGE_URL = "http://rjtmobile.com/grocery/images/"
+
+        const val REGISTER_URL = "https://apolis-grocery.herokuapp.com/api/auth/register"
+        const val LOGIN_URL = "https://apolis-grocery.herokuapp.com/api/auth/login"
     }
 }

@@ -51,9 +51,6 @@ class AdapterCategory(var mContext: Context, var mList: ArrayList<Category>) : R
                 intent.putExtra(Category.CATEGORY_KEY, categoryData.catId)
                 mContext.startActivity(intent)
             }
-
         }
-
     }
-
 }

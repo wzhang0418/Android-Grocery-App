@@ -11,20 +11,16 @@ data class ProductResponse(
 ): Serializable
 
 data class Product(
-    val __v: Int,
-    val _id: String,
-    val catId: Int,
-    val created: String,
-    val description: String,
-    val image: String,
-    val mrp: Double,
-    val position: Int,
-    val price: Double,
-    val productName: String,
-    val quantity: Int,
-    val status: Boolean,
-    val subId: Int,
-    val unit: String
+        val _id: String? = null,
+        val catId: Int? = null,
+        val description: String? = null,
+        val image: String? = null,
+        val mrp: Double?  = null,
+        val price: Double? = null,
+        val productName: String? = null,
+        var qty: Int = 0,
+        val subId: Int? = null,
+        val unit: String? = null
 ): Serializable{
     companion object{
         const val PRODUCT_KEY = "product"

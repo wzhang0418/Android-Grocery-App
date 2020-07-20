@@ -1,0 +1,10 @@
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/badge"
+        android:actionLayout="@layout/menu_badge_icon"
+        android:icon="@drawable/red_circle"
+        app:showAsAction="always"
+        android:title="TODO">
+    </item>
+</menu>

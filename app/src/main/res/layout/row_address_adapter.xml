@@ -1,0 +1,77 @@
+<RelativeLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/text_view_address_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:textSize="32dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/text_view_name_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="24dp"
+        android:layout_below="@+id/text_view_address_type"/>
+
+    <TextView
+        android:id="@+id/text_view_address_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textSize="24dp"
+        android:layout_below="@+id/text_view_name_address"/>
+
+    <TextView
+        android:id="@+id/text_view_zipcode_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_address_address"
+        android:text="Zip Code"
+        android:textSize="24dp"/>
+
+    <TextView
+        android:id="@+id/text_view_mobile_number_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile Number"
+        android:textSize="24dp"
+        android:layout_below="@+id/text_view_zipcode_address"/>
+
+    <TextView
+        android:id="@+id/text_view_edit_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:textColor="@color/colorPink"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:layout_below="@+id/text_view_mobile_number_address"
+        android:layout_marginTop="16dp"/>
+    <TextView
+        android:id="@+id/text_view_delete_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:textColor="@color/colorPink"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:layout_below="@+id/text_view_mobile_number_address"
+        android:layout_toRightOf="@+id/text_view_edit_address"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/text_view_edit_address"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="10dp"/>
+
+
+</RelativeLayout>
