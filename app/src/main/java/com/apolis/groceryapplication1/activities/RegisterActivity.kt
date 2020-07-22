@@ -2,7 +2,7 @@ package com.apolis.groceryapplication1.activities
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Toast
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import com.android.volley.Request
 import com.android.volley.Response
@@ -15,6 +15,7 @@ import com.apolis.groceryapplication1.helpers.toast
 import com.apolis.groceryapplication1.models.RegisterResponse
 import com.google.gson.GsonBuilder
 import kotlinx.android.synthetic.main.activity_register.*
+import kotlinx.android.synthetic.main.app_bar.*
 import org.json.JSONObject
 
 class RegisterActivity : AppCompatActivity() {
@@ -31,6 +32,13 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     private fun init() {
+
+        //Set up tool bar
+        var toolbar = tool_bar
+        toolbar.title = "Register"
+        setSupportActionBar(toolbar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
         //click "register" button
         button_register.setOnClickListener {
             if(isValidInput()) {
@@ -39,7 +47,7 @@ class RegisterActivity : AppCompatActivity() {
                 var password = edit_text_password_register.text.toString()
                 var mobile = edit_text_mobile_register.text.toString()
 
-                register(firstName, email, password, mobile)
+                register(null, firstName, email, password, mobile)
             }
         }
 
@@ -49,10 +57,20 @@ class RegisterActivity : AppCompatActivity() {
         }
     }
 
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            android.R.id.home -> {
+                finish()
+            }
+        }
+        return true
+    }
+
     //Send the register request info to server API
-    fun register(firstName: String, email: String, password: String, mobile: String) {
+    fun register(_id: Int?, firstName: String, email: String, password: String, mobile: String) {
 
         var params = HashMap<String, String>()
+        params["_id"] = _id.toString()
         params["firstName"] = firstName
         params["email"] = email
         params["password"] = password
@@ -70,7 +88,7 @@ class RegisterActivity : AppCompatActivity() {
                         this.toast("Login Failed")
                     }else{
                         this.toast("Register successfully")
-                        sessionManager.register(firstName,email,password,mobile)
+                        sessionManager.register(registerResponse.data)
                         startActivity(Intent(this, LoginActivity::class.java))
                     }
                 },

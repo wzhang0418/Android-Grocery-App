@@ -21,20 +21,19 @@ import kotlinx.android.synthetic.main.row_product_adapter.view.*
 import kotlinx.android.synthetic.main.row_product_adapter.view.button_add
 import kotlin.properties.Delegates
 
-class AdapterProduct(var mContext: Context, var mList: ArrayList<Product>) : RecyclerView.Adapter<AdapterProduct.ViewHolder>() {
+class AdapterProduct(var mContext: Context, var mList: ArrayList<Product>) : RecyclerView.Adapter<AdapterProduct.ProductViewHolder>() {
 
 
-
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProductViewHolder {
         var view = LayoutInflater.from(mContext).inflate(R.layout.row_product_adapter, parent, false)
-        return ViewHolder(view)
+        return ProductViewHolder(view)
     }
 
     override fun getItemCount(): Int {
         return mList.size
     }
 
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ProductViewHolder, position: Int) {
         var product = mList[position]
         holder.bind(product)
     }
@@ -44,7 +43,7 @@ class AdapterProduct(var mContext: Context, var mList: ArrayList<Product>) : Rec
         notifyDataSetChanged()
     }
 
-    inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    inner class ProductViewHolder(private var view: View) : RecyclerView.ViewHolder(view) {
 
         lateinit var dbHelper: DBHelper
 

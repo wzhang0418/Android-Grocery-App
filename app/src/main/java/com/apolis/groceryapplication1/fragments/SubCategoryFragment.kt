@@ -57,7 +57,6 @@ class SubCategoryFragment : Fragment() {
     private fun getData(subId: Int, view: View) {
         Log.d("GETPRODUCTBUSUBID",Endpoints.getProductsBySubId(subId))
 
-
         var requestQueue = Volley.newRequestQueue(activity as Context)
         var request = StringRequest(
             Request.Method.GET,
@@ -81,6 +80,7 @@ class SubCategoryFragment : Fragment() {
         )
         requestQueue.add(request)
     }
+
 
     companion object {
         @JvmStatic

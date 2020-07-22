@@ -5,6 +5,7 @@ import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.util.Log
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import com.android.volley.Request
 import com.android.volley.Response
@@ -21,6 +22,7 @@ import com.apolis.groceryapplication1.models.LoginFail
 import com.apolis.groceryapplication1.models.LoginSuccess
 import com.google.gson.GsonBuilder
 import kotlinx.android.synthetic.main.activity_login.*
+import kotlinx.android.synthetic.main.app_bar.*
 import org.json.JSONObject
 
 class LoginActivity : AppCompatActivity() {
@@ -43,6 +45,13 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun init() {
+
+        //Set up tool bar
+        var toolbar = tool_bar
+        toolbar.title = "Login"
+        setSupportActionBar(toolbar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
         var savedEmail = sharedPreferences.getString(KEY_EMAIL,null)
         edit_text_email_login.setText(savedEmail)
 
@@ -59,6 +68,15 @@ class LoginActivity : AppCompatActivity() {
 
     }
 
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            android.R.id.home -> {
+                finish()
+            }
+        }
+        return true
+    }
+
     private fun isValidInput(): Boolean {
         if((edit_text_email_login.text.isNullOrEmpty()) || (edit_text_password_login.text.isNullOrEmpty())){
             if(edit_text_email_login.text.isNullOrEmpty()) {
@@ -73,7 +91,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun login(email: String, password: String){
-        var params = HashMap<String, String>()
+        val params = HashMap<String, String>()
         params["email"] = edit_text_email_login.text.toString()
         params["password"] = edit_text_password_login.text.toString()
 

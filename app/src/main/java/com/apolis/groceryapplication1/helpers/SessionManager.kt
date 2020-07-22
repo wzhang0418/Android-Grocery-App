@@ -2,6 +2,7 @@ package com.apolis.groceryapplication1.helpers
 
 import android.content.Context
 import android.content.SharedPreferences
+import com.apolis.groceryapplication1.models.User
 
 class SessionManager(val mContext: Context) {
 
@@ -10,6 +11,7 @@ class SessionManager(val mContext: Context) {
 
     companion object {
         const val FILE_NAME = "my_file"
+        const val KEY_ID = "_id"
         const val KEY_NAME = "name"
         const val KEY_EMAIL = "email"
         const val KEY_MOBILE = "mobile"
@@ -17,11 +19,12 @@ class SessionManager(val mContext: Context) {
         const val KEY_IS_LOGGED_IN = "isLoggedIn"
     }
 
-    fun register(name: String, email: String, mobile: String, password: String) {
-        editor.putString(KEY_NAME, name)
-        editor.putString(KEY_EMAIL, email)
-        editor.putString(KEY_MOBILE, mobile)
-        editor.putString(KEY_PASSWORD, password)
+    fun register(user: User) {
+        editor.putString(KEY_ID, user._id)
+        editor.putString(KEY_NAME, user.firstName)
+        editor.putString(KEY_EMAIL, user.email)
+        editor.putString(KEY_MOBILE, user.mobile)
+        editor.putString(KEY_PASSWORD, user.password)
         editor.putBoolean(KEY_IS_LOGGED_IN, true)
         editor.commit()
     }
@@ -34,6 +37,12 @@ class SessionManager(val mContext: Context) {
 
     fun getUser(): String? {
         return sharedPreferences.getString(KEY_NAME, null)
+    }
+    fun getUserId(): String? {
+        return sharedPreferences.getString(KEY_ID, null)
+    }
+    fun getMobile(): String? {
+        return sharedPreferences.getString(KEY_MOBILE, null)
     }
 
     fun isLoggedIn(): Boolean{

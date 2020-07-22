@@ -13,7 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".activities.OrderConfirmationActivity"></activity>
+        <activity android:name=".activities.HomeActivity"></activity>
+        <activity android:name=".activities.LoginActivity" />
+        <activity android:name=".activities.OrderConfirmationActivity" />
         <activity android:name=".activities.PaymentActivity" />
         <activity android:name=".activities.AddAddressActivity" />
         <activity android:name=".activities.AddressActivity" />
@@ -22,10 +24,9 @@
         <activity android:name=".activities.CategoryActivity" />
         <activity android:name=".activities.ProductDetailActivity" />
         <activity android:name=".activities.SubCategoryActivity" />
-        <activity android:name=".activities.LoginActivity">
+        <activity android:name=".activities.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

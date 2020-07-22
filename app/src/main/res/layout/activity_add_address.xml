@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/tool_bar"
         android:padding="10dp"
-        android:layout_margin="16dp"
+        android:layout_marginHorizontal="16dp"
         android:background="#fff">
 
         <TextView
@@ -19,23 +19,23 @@
             android:layout_height="wrap_content"
             android:text="Bill To"
             android:textColor="#000"
-            android:textStyle="bold"
-            android:textSize="24dp"/>
+            android:textSize="20dp"
+            android:textStyle="bold" />
         <EditText
             android:id="@+id/edit_text_name_receiver"
             android:layout_below="@+id/text_view_bill_to"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="16dp"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:background="@drawable/edit_text_background"
             android:hint="Name"
-            android:textSize="24dp"/>
+            android:textSize="20dp"/>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:hint="Mobile Number"
-            android:textSize="24dp"
+            android:textSize="20dp"
             android:background="@drawable/edit_text_background"
             android:layout_below="@+id/edit_text_name_receiver"
             android:layout_marginTop="16dp"/>
@@ -46,7 +46,8 @@
     <RelativeLayout
         android:id="@+id/relative_layout_delivery_address"
         android:layout_below="@+id/relative_layout_bill_to"
-        android:layout_margin="16dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
         android:background="#fff"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -58,7 +59,7 @@
             android:layout_height="wrap_content"
             android:text="Delivery Address"
             android:textStyle="bold"
-            android:textSize="24dp"
+            android:textSize="20dp"
             android:textColor="#000"/>
 
         <EditText
@@ -67,8 +68,8 @@
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:hint="Street Address"
-            android:textSize="24dp"
-            android:layout_marginTop="32dp"
+            android:textSize="20dp"
+            android:layout_marginTop="16dp"
             android:background="@drawable/edit_text_background"/>
 
         <EditText
@@ -79,7 +80,7 @@
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:hint="Apt/House/Suite # (Optional)"
-            android:textSize="24dp"/>
+            android:textSize="20dp"/>
 
         <LinearLayout
             android:id="@+id/linear_layout_zipcode_city"
@@ -99,7 +100,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:hint="Zip Code"
-                android:textSize="24dp"/>
+                android:textSize="20dp"/>
             <EditText
                 android:id="@+id/edit_text_city"
                 android:background="@drawable/edit_text_background"
@@ -108,7 +109,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:hint="City"
-                android:textSize="24dp"/>
+                android:textSize="20dp"/>
 
         </LinearLayout>
 
@@ -118,7 +119,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Address Type"
-            android:textSize="24dp"
+            android:textSize="20dp"
             android:layout_below="@+id/linear_layout_zipcode_city"/>
 
         <LinearLayout
@@ -136,7 +137,6 @@
                 android:layout_below="@+id/text_view_address_type"
                 android:text="Home"
                 android:textSize="16dp"
-                android:backgroundTint="@color/colorPink"
                 android:layout_weight="1"/>
             <CheckBox
                 android:id="@+id/checkbox_office"
@@ -170,11 +170,8 @@
         android:text="Save Address"
         android:textSize="16dp"
         android:textColor="#fff"
-        android:layout_alignParentBottom="true"
-        android:layout_marginTop="72dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="100dp"
         android:background="@drawable/round_corner_button"/>
 
 </RelativeLayout>

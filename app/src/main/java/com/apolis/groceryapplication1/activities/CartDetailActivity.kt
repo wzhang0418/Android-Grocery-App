@@ -51,7 +51,6 @@ class CartDetailActivity : AppCompatActivity() {
         button_checkout.setOnClickListener {
             startActivity(Intent(this, AddressActivity::class.java))
         }
-
     }
 
     //When click on cart icon on the Menu bar

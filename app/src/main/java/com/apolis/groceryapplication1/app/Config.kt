@@ -11,5 +11,9 @@ class Config {
 
         const val REGISTER_URL = "https://apolis-grocery.herokuapp.com/api/auth/register"
         const val LOGIN_URL = "https://apolis-grocery.herokuapp.com/api/auth/login"
+
+        const val ADDRESS_URL = "https://apolis-grocery.herokuapp.com/api/address"
+        const val ORDERS_URL = "https://apolis-grocery.herokuapp.com/api/orders"
+
     }
 }

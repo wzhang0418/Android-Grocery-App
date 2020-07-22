@@ -31,6 +31,14 @@ class Endpoints {
         fun getLoginURL(): String{
             return Config.LOGIN_URL
         }
+
+        fun getAddressURL(): String{
+            return Config.ADDRESS_URL
+        }
+
+        fun getOrdersURL(): String{
+            return Config.ORDERS_URL
+        }
     }
 
 

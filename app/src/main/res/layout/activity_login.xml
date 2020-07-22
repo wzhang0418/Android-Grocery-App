@@ -2,50 +2,62 @@
     android:layout_width="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:padding="32dp"
     android:background="#fff">
 
-    <TextView
-        android:layout_marginTop="32dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Login"
-        android:layout_gravity="center"
-        android:textSize="40dp"
-        android:textStyle="bold"
-        android:textColor="#000000"/>
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/ic_baseline_account_circle_24"
-        android:layout_gravity="center"
-        android:layout_marginTop="60dp"/>
+    <include layout="@layout/app_bar"/>
 
-    <EditText
-        android:id="@+id/edit_text_email_login"
-        android:layout_marginTop="30dp"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Email"/>
-    <EditText
-        android:id="@+id/edit_text_password_login"
-        android:layout_marginTop="30dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Password"
-        android:inputType="textPassword"/>
+        android:orientation="vertical"
+        android:padding="16dp">
 
-    <Button
-        android:id="@+id/button_login"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:background="@drawable/round_button"
-        android:text="Login" />
+        <TextView
+            android:layout_marginTop="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_gravity="center"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_baseline_account_circle_24"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"/>
+
+        <EditText
+            android:id="@+id/edit_text_email_login"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"/>
+        <EditText
+            android:id="@+id/edit_text_password_login"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:background="@drawable/round_button"
+            android:text="Login" />
+
+    </LinearLayout>
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
 
         <TextView
             android:id="@+id/text_view_already_registered"
@@ -53,13 +65,13 @@
             android:layout_height="wrap_content"
             android:text="New user?"
             android:layout_marginTop="80dp"
-            android:layout_marginLeft="100dp"/>
+            android:layout_marginLeft="20dp"/>
         <TextView
             android:id="@+id/text_view_click_here_to_register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Click here"
-            android:textColor="#000000"
+            android:textColor="#000"
             android:layout_marginTop="80dp"
             android:layout_marginLeft="8dp"
             android:layout_toRightOf="@id/text_view_already_registered"/>
@@ -67,12 +79,9 @@
             android:layout_width="60dp"
             android:layout_height="1dp"
             android:layout_below="@+id/text_view_click_here_to_register"
-            android:background="#000000"
-            android:layout_marginLeft="175dp"/>
+            android:background="#000"
+            android:layout_marginLeft="95dp"/>
 
     </RelativeLayout>
-
-
-
 
 </LinearLayout>
