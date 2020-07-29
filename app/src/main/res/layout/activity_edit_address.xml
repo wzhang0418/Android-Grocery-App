@@ -1,0 +1,176 @@
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#F5F5F5"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include layout="@layout/app_bar"/>
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_bill_to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tool_bar"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:background="#fff">
+
+        <TextView
+            android:id="@id/text_view_bill_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bill To"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_text_name_receiver_edit"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/text_view_bill_to"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="Name"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edit_text_mobile_receiver_edit"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/edit_text_name_receiver_edit"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="Mobile Number"
+            android:textSize="20dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_delivery_address"
+        android:layout_below="@+id/relative_layout_bill_to"
+        android:padding="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text_view_delivery_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery Address"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#000"/>
+
+        <EditText
+            android:id="@+id/edit_text_street_name_edit"
+            android:layout_below="@+id/text_view_delivery_address"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Street Address"
+            android:textSize="20dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edit_text_background"/>
+
+        <EditText
+            android:background="@drawable/edit_text_background"
+            android:id="@+id/edit_text_house_number_edit"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/edit_text_street_name_edit"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Apt/House/Suite # (Optional)"
+            android:textSize="20dp"/>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_zipcode_city"
+            android:layout_marginTop="16dp"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_text_house_number_edit">
+
+            <EditText
+                android:id="@+id/edit_text_pincode_edit"
+                android:background="@drawable/edit_text_background"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:layout_below="@+id/edit_text_house_number_edit"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Zip Code"
+                android:textSize="20dp"/>
+            <EditText
+                android:id="@+id/edit_text_city_edit"
+                android:background="@drawable/edit_text_background"
+                android:layout_weight="1"
+                android:layout_below="@+id/edit_text_house_number"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="City"
+                android:textSize="20dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_view_address_type"
+            android:layout_marginTop="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address Type"
+            android:textSize="20dp"
+            android:layout_below="@+id/linear_layout_zipcode_city"/>
+
+
+        <RadioGroup
+            android:layout_below="@+id/text_view_address_type"
+            android:layout_marginTop="10dp"
+            android:id="@+id/radio_group"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:textSize="20dp"
+                android:id="@+id/radio_button_home_edit"
+                android:text="Home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:textSize="20dp"
+                android:id="@+id/radio_button_office_edit"
+                android:text="Office"
+                android:layout_marginHorizontal="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:textSize="20dp"
+                android:id="@+id/radio_button_other_edit"
+                android:text="Other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </RadioGroup>
+
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_save_address_edit"
+        android:layout_below="@id/relative_layout_delivery_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Address"
+        android:textSize="16dp"
+        android:textColor="#fff"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/round_corner_button"/>
+
+</RelativeLayout>

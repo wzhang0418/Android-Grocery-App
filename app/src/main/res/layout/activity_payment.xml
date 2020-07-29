@@ -1,0 +1,173 @@
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include layout="@layout/app_bar"/>
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_amount_to_pay"
+        android:layout_below="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="32dp"
+        android:paddingBottom="32dp"
+
+        android:background="@color/colorLightBlue">
+
+        <TextView
+            android:id="@+id/text_view_amount_to_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amount to pay"
+            android:textColor="#fff"
+            android:layout_centerHorizontal="true"
+            android:textSize="24dp"/>
+
+        <TextView
+            android:id="@+id/text_view_amount_to_pay_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="$000.00"
+            android:textSize="32dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:outlineAmbientShadowColor="#fff"
+            android:layout_below="@+id/text_view_amount_to_pay"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/text_view_you_will_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You will save $000.00 on this order!"
+            android:layout_centerHorizontal="true"
+            android:textColor="#fff"
+            android:layout_below="@+id/text_view_amount_to_pay_price"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_apply_coupon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apply Coupon and Offers"
+        android:textStyle="bold"
+        android:textColor="@color/colorPink"
+        android:layout_below="@+id/relative_layout_amount_to_pay"
+        android:layout_margin="16dp"
+        android:background="@drawable/button_border"/>
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_order_amount"
+        android:layout_below="@+id/button_apply_coupon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/text_view_sub_total_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sub Total"
+            android:textAllCaps="false"/>
+        <TextView
+            android:id="@+id/text_view_discount_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discount"
+            android:textAllCaps="false"
+            android:layout_below="@+id/text_view_sub_total_pay"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:id="@+id/text_view_delivery_charges_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery Charges"
+            android:textAllCaps="false"
+            android:layout_below="@+id/text_view_discount_pay"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:id="@+id/text_view_order_amount_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Amount"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:layout_below="@+id/text_view_delivery_charges_pay"
+            android:layout_marginTop="5dp"/>
+
+
+        <TextView
+            android:id="@+id/text_view_sub_total_price_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$000.00"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/text_view_discount_price_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_sub_total_price_pay"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:text="-$000.00"
+            android:textColor="@color/colorPink" />
+        <TextView
+            android:id="@+id/text_view_delivery_charges_price_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$000.00"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/text_view_discount_price_pay"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:id="@+id/text_view_order_amount_price_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$000.00"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/text_view_delivery_charges_price_pay"
+            android:layout_marginTop="5dp"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_pay_online"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Pay Online"
+            android:textColor="#000"
+            android:background="@drawable/round_button_corner_left_grey"/>
+        <View
+            android:layout_width="4dp"
+            android:layout_height="32dp"
+            android:background="#fff"/>
+        <Button
+            android:id="@+id/button_pay_cash"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_round_corner_right"
+            android:text="Pay by Cash On Delivery"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
