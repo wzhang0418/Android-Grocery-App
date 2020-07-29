@@ -18,10 +18,17 @@ data class OrderResponse(
 }
 
 data class OrderSummary(
+<<<<<<< HEAD
         val deliveryCharges: Double? = null,
         val discount: Double? = null,
         val orderAmount: Double? = null,
         val ourPrice: Double? = null
+=======
+        val deliveryCharges: Int,
+        val discount: Int,
+        val orderAmount: Int,
+        val ourPrice: Int
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
 ):Serializable{
     companion object{
         const val KEY_ORDER_SUMMARY = "orderSummary"

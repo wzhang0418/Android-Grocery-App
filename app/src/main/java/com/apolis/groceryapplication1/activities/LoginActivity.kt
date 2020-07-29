@@ -52,7 +52,10 @@ class LoginActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
+<<<<<<< HEAD
         //Keep the login email stored in sharedPreference
+=======
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
         var savedEmail = sharedPreferences.getString(KEY_EMAIL,null)
         edit_text_email_login.setText(savedEmail)
 
@@ -105,9 +108,16 @@ class LoginActivity : AppCompatActivity() {
                     var gson = GsonBuilder().create()
                     var loginSuccess = gson.fromJson(it.toString(), LoginSuccess::class.java)
                     var loginFail = gson.fromJson(it.toString(), LoginFail::class.java)
+<<<<<<< HEAD
                     if(!loginFail.error){
                         this.toast("Login Successfully")
                         sessionManager.saveLoginData(email)
+=======
+                    //mContext.toast(loginResponse.toString())
+                    if(!loginFail.error){
+                        this.toast("Login Successfully")
+                        sessionManager.saveLoginData(email,password)
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
                         this.toast("data saved in share preference file")
                         startActivity(Intent(this, CategoryActivity::class.java))
                     }else{

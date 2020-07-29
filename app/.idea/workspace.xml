@@ -8,7 +8,11 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
+<<<<<<< HEAD
     <option name="TOOL_WINDOW_LOG_LEVEL" value="debug" />
+=======
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
@@ -34,9 +38,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+<<<<<<< HEAD
         <option value="Kotlin File" />
         <option value="resourceFile" />
         <option value="layoutResourceFile" />
+=======
+        <option value="layoutResourceFile" />
+        <option value="resourceFile" />
+        <option value="Kotlin File" />
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
       </list>
     </option>
   </component>
@@ -51,6 +61,7 @@
     <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-07-21T03:48:08.053Z" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="D:/RoomApplication/app" />
     <property name="project.structure.last.edited" value="Dependencies" />
     <property name="project.structure.proportion" value="0.17" />
@@ -65,6 +76,16 @@
       <recent name="com.apolis.groceryapplication1.activities" />
     </key>
     <key name="android.template.205099240">
+=======
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
+    <property name="project.structure.last.edited" value="Dependencies" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+  </component>
+  <component name="RecentsManager">
+    <key name="android.template.-451965280">
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
       <recent name="com.apolis.groceryapplication1.activities" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -73,6 +94,7 @@
       <recent name="D:\GroceryApplication1\app\src\main\res\menu" />
       <recent name="D:\GroceryApplication1\app\src\main\java\com\apolis\groceryapplication1\helpers" />
     </key>
+<<<<<<< HEAD
     <key name="android.template.-451965280">
       <recent name="com.apolis.groceryapplication1.activities" />
     </key>
@@ -83,6 +105,15 @@
       <recent name="com.apolis.groceryapplication1.activities" />
     </key>
     <key name="android.template.1884112656">
+=======
+    <key name="android.template.205099240">
+      <recent name="com.apolis.groceryapplication1.activities" />
+    </key>
+    <key name="android.template.-2091738014">
+      <recent name="com.apolis.groceryapplication1.activities" />
+    </key>
+    <key name="android.template.1252805793">
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
       <recent name="com.apolis.groceryapplication1.activities" />
     </key>
   </component>
@@ -176,6 +207,7 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="526" y="203" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.864/0.-1080.1920.1080@0.0.1536.864" timestamp="1594851451400" />
+<<<<<<< HEAD
     <state x="883" y="0" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595848288370">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -228,10 +260,45 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1451" height="69" key="GridCell.Tab.1.right/0.0.1536.864/0.-1080.1920.1080@0.0.1536.864" timestamp="1595844156245" />
+=======
+    <state x="883" y="0" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595323182275">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="883" y="0" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864/0.-1080.1920.1080@0.0.1536.864" timestamp="1595323182275" />
+    <state x="347" y="171" key="AndroidCreateResourceFileDialog" timestamp="1595345382048">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="347" y="171" key="AndroidCreateResourceFileDialog/0.0.1536.864/0.-1080.1920.1080@0.0.1536.864" timestamp="1595345382048" />
+    <state x="602" y="198" key="AndroidProcessChooserDialog" timestamp="1595303969264">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="602" y="198" key="AndroidProcessChooserDialog/0.0.1536.864/0.-1080.1920.1080@0.0.1536.864" timestamp="1595303969264" />
+    <state x="547" y="171" key="FileChooserDialogImpl" timestamp="1595357903294">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="547" y="171" key="FileChooserDialogImpl/0.0.1536.864/0.-1080.1920.1080@0.0.1536.864" timestamp="1595357903294" />
+    <state width="1405" height="113" key="GridCell.Tab.0.bottom" timestamp="1595454808831">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1405" height="113" key="GridCell.Tab.0.bottom/0.0.1536.864/0.-1080.1920.1080@0.0.1536.864" timestamp="1595454808831" />
+    <state width="1405" height="113" key="GridCell.Tab.0.center" timestamp="1595454808830">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1405" height="113" key="GridCell.Tab.0.center/0.0.1536.864/0.-1080.1920.1080@0.0.1536.864" timestamp="1595454808830" />
+    <state width="1405" height="113" key="GridCell.Tab.0.left" timestamp="1595454808830">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1405" height="113" key="GridCell.Tab.0.left/0.0.1536.864/0.-1080.1920.1080@0.0.1536.864" timestamp="1595454808830" />
+    <state width="1405" height="113" key="GridCell.Tab.0.right" timestamp="1595454808831">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1405" height="113" key="GridCell.Tab.0.right/0.0.1536.864/0.-1080.1920.1080@0.0.1536.864" timestamp="1595454808831" />
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
     <state x="504" y="299" key="ScreenshotRecorder.Options.Dimensions" timestamp="1595233405476">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="504" y="299" key="ScreenshotRecorder.Options.Dimensions/0.0.1536.864/0.-1080.1920.1080@0.0.1536.864" timestamp="1595233405476" />
+<<<<<<< HEAD
     <state x="264" y="68" key="SettingsEditor" timestamp="1595568558204">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -245,6 +312,17 @@
     </state>
     <state x="608" y="-692" key="com.intellij.ide.util.TipDialog/0.0.1536.864/0.-1080.1920.1080@0.-1080.1920.1080" timestamp="1594840910784" />
     <state x="486" y="310" key="com.intellij.ide.util.TipDialog/0.0.1536.864/0.-1080.1920.1080@0.0.1536.864" timestamp="1595943976761" />
+=======
+    <state x="120" y="122" width="1304" height="577" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1595304072100">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="120" y="122" width="1304" height="577" key="com.android.tools.idea.avdmanager.AvdListDialog/0.0.1536.864/0.-1080.1920.1080@0.0.1536.864" timestamp="1595304072100" />
+    <state x="486" y="310" key="com.intellij.ide.util.TipDialog" timestamp="1595219281215">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="608" y="-692" key="com.intellij.ide.util.TipDialog/0.0.1536.864/0.-1080.1920.1080@0.-1080.1920.1080" timestamp="1594840910784" />
+    <state x="486" y="310" key="com.intellij.ide.util.TipDialog/0.0.1536.864/0.-1080.1920.1080@0.0.1536.864" timestamp="1595219281215" />
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
     <state x="394" y="160" key="psd.add.library.dependency.panel.dimension" timestamp="1594826774687">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -253,6 +331,7 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="446" y="193" key="run.anything.popup/0.0.1536.864/0.-1080.1920.1080@0.0.1536.864" timestamp="1595270127534" />
+<<<<<<< HEAD
     <state x="430" y="178" width="672" height="678" key="search.everywhere.popup" timestamp="1595847814956">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -264,5 +343,11 @@
         <watch expression="String(it.networkResponse.data)" language="kotlin" />
       </configuration>
     </watches-manager>
+=======
+    <state x="430" y="178" width="672" height="678" key="search.everywhere.popup" timestamp="1595281404235">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="430" y="178" width="672" height="678" key="search.everywhere.popup/0.0.1536.864/0.-1080.1920.1080@0.0.1536.864" timestamp="1595281404235" />
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
   </component>
 </project>

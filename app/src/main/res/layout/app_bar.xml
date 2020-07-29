@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/tool_bar"
@@ -6,3 +7,15 @@
     android:theme="@style/Platform.MaterialComponents"
     android:layout_width="match_parent"
     android:layout_height="wrap_content" />
+=======
+<androidx.appcompat.widget.Toolbar android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/tool_bar"
+    android:background="@color/colorLightBlue"
+    android:theme="@style/Platform.MaterialComponents"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+</androidx.appcompat.widget.Toolbar>
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa

@@ -1,5 +1,6 @@
 <RelativeLayout android:layout_height="match_parent"
     android:layout_width="match_parent"
+<<<<<<< HEAD
     android:background="#fff"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
@@ -44,5 +45,14 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="550dp"/>
 
+=======
+    android:background="@drawable/splash_screen"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
 
 </RelativeLayout>

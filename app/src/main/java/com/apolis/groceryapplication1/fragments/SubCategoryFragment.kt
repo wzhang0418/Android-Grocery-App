@@ -55,7 +55,11 @@ class SubCategoryFragment : Fragment() {
     }
 
     private fun getData(subId: Int, view: View) {
+<<<<<<< HEAD
 //        Log.d("GETPRODUCTBUSUBID",Endpoints.getProductsBySubId(subId))
+=======
+        Log.d("GETPRODUCTBUSUBID",Endpoints.getProductsBySubId(subId))
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
 
         var requestQueue = Volley.newRequestQueue(activity as Context)
         var request = StringRequest(

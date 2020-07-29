@@ -5,5 +5,8 @@
     <color name="colorAccent">#03DAC5</color>
     <color name="colorPink">#ec226c</color>
     <color name="colorLightBlue">#1976D2</color>
+<<<<<<< HEAD
     <color name="colorBadge">#FF0000</color>
+=======
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
 </resources>

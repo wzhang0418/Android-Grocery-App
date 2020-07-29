@@ -15,7 +15,11 @@
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+<<<<<<< HEAD
         android:layout_marginTop="10dp">
+=======
+        android:layout_marginTop="16dp">
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
 
     </androidx.viewpager.widget.ViewPager>
 

@@ -48,6 +48,7 @@
             android:textStyle="bold"
             android:textSize="24dp"/>
 
+<<<<<<< HEAD
         <ScrollView
             android:layout_below="@+id/text_view_product_price_detail"
             android:layout_above="@+id/linear_layout_button_product_detail"
@@ -68,6 +69,19 @@
 
         <LinearLayout
             android:id="@+id/linear_layout_button_product_detail"
+=======
+        <TextView
+            android:id="@+id/text_view_product_description_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textSize="16dp"
+            android:layout_below="@+id/text_view_product_price_detail"
+            android:layout_marginTop="32dp"/>
+
+
+        <LinearLayout
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
             android:layout_alignParentBottom="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -2,12 +2,8 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/action_cart"
+        android:id="@+id/action_save_menu_demo"
         android:icon="@drawable/ic_baseline_shopping_cart_24"
         app:showAsAction="always"
-<<<<<<< HEAD
-        android:title="cart" />
-=======
         android:title="TODO" />
->>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
 </menu>

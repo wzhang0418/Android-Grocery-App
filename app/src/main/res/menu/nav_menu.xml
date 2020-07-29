@@ -4,7 +4,11 @@
     <group>
         <item
             android:id="@+id/item_account"
+<<<<<<< HEAD
             android:title="My Account" />
+=======
+            android:title="My Account"/>
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
         <item
             android:id="@+id/item_order"
             android:title="My Orders"/>

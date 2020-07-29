@@ -3,6 +3,10 @@ package com.apolis.groceryapplication1.activities
 import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
+<<<<<<< HEAD
+=======
+import android.widget.Toast
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
 import androidx.appcompat.app.AppCompatActivity
 import com.android.volley.Request
 import com.android.volley.Response
@@ -17,28 +21,42 @@ import com.apolis.groceryapplication1.models.Address
 import com.apolis.groceryapplication1.models.OrderSummary
 import com.apolis.groceryapplication1.models.Product
 import com.google.gson.GsonBuilder
+<<<<<<< HEAD
 import kotlinx.android.synthetic.main.activity_payment.*
 import kotlinx.android.synthetic.main.app_bar.*
 import org.json.JSONObject
 import java.math.BigDecimal
 import java.math.RoundingMode
+=======
+import kotlinx.android.synthetic.main.activity_add_address.*
+import kotlinx.android.synthetic.main.activity_payment.*
+import kotlinx.android.synthetic.main.app_bar.*
+import org.json.JSONObject
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
 
 class PaymentActivity : AppCompatActivity() {
 
     lateinit var dbHelper: DBHelper
     lateinit var address: Address
     lateinit var sessionManager: SessionManager
+<<<<<<< HEAD
 
     var productList: ArrayList<Product> = ArrayList()
     var orderSumList: ArrayList<OrderSummary> = ArrayList()
+=======
+    var productList: ArrayList<Product> = ArrayList()
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_payment)
 
+<<<<<<< HEAD
         dbHelper = DBHelper(this)
         sessionManager = SessionManager(this)
 
+=======
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
         init()
     }
 
@@ -49,7 +67,10 @@ class PaymentActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
+<<<<<<< HEAD
         getTotal()
+=======
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
 
         button_pay_online.setOnClickListener {
             this.toast("Online Payment Is Not Available")
@@ -72,6 +93,7 @@ class PaymentActivity : AppCompatActivity() {
         return true
     }
 
+<<<<<<< HEAD
     private fun getTotal(){
         var total = dbHelper.getTotal()
         text_view_you_will_save.text = "You will save " + "$" + BigDecimal(total[1]).setScale(2, RoundingMode.HALF_EVEN).toString()
@@ -90,6 +112,22 @@ class PaymentActivity : AppCompatActivity() {
         productList = dbHelper.readCart()
         var product:ArrayList<Any> = ArrayList()
         var oneProduct= HashMap<String, Any>()
+=======
+    //POST the orders to server
+    private fun postOrder(){
+        sessionManager = SessionManager(this)
+        var userId = sessionManager.getUserId().toString()
+
+        dbHelper = DBHelper(this)
+        productList = dbHelper.readCart()
+        //orderSummary = dbHelper.getOrderSummary()
+
+        // not sure
+        var product:ArrayList<Any> = ArrayList()
+        var oneProduct= HashMap<String, Any>()
+
+        //map prouctList into jsonObject
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
         for (item in productList) {
             oneProduct["mrp"] = item.mrp.toString()
             oneProduct["price"] = item.price.toString()
@@ -103,11 +141,16 @@ class PaymentActivity : AppCompatActivity() {
         var shipAddress = HashMap<String, Any?>()
         address = Address()
         shipAddress["houseNo"] = address.houseNo
+<<<<<<< HEAD
         shipAddress["streetName"] = address.streetName
+=======
+        shipAddress["streeName"] = address.streetName
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
         shipAddress["city"] = address.city
         shipAddress["pincode"] = address.pincode
         val jsonAddress = JSONObject(shipAddress as Map<String, Any?>)
 
+<<<<<<< HEAD
         //map orderSummary into jsonObject
         orderSumList = dbHelper.checkoutTotal()
         var order: ArrayList<Any> = ArrayList()
@@ -127,6 +170,27 @@ class PaymentActivity : AppCompatActivity() {
         params["products"] = product
         params["address"] = jsonAddress
 
+=======
+//        //map orderSummary into jsonObject
+//        var orderSum = HashMap<String, Int>()
+//        orderSum["deliveryCharges"] = orderSummary.deliveryCharges
+//        orderSum["discount"] = orderSummary.discount
+//        orderSum["orderAmount"] = orderSummary.orderAmount
+//        orderSum["ourPrice"] = orderSummary.ourPrice
+//        val jsonPayment = JSONObject(orderSum as Map<, >)
+
+
+        var params = HashMap<String, Any>()
+        //params["orderSummary"] = jsonPayment
+//        params["userId"] = userId
+//        params["products"] = product
+//        params["address"] = jsonAddress
+        params["userId"] = "5f114569487f410017816626"
+        params["products"] = product
+        params["address"] = jsonAddress
+
+
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
         val jsonObject = JSONObject(params as Map<String, Any?>)
         val url = Endpoints.getOrdersURL()
 
@@ -135,7 +199,11 @@ class PaymentActivity : AppCompatActivity() {
                 Request.Method.POST, url, jsonObject,
                 Response.Listener {
                     var gson = GsonBuilder().create()
+<<<<<<< HEAD
                     var addressUploadResponse = gson.fromJson(it.toString(), OrderSummary::class.java)
+=======
+                    var addressUploadRespone = gson.fromJson(it.toString(), OrderSummary::class.java)
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
                     startActivity(Intent(this, OrderConfirmationActivity::class.java))
                 },
                 Response.ErrorListener {

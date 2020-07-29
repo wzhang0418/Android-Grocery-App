@@ -17,9 +17,12 @@ class SessionManager(val mContext: Context) {
         const val KEY_MOBILE = "mobile"
         const val KEY_PASSWORD = "password"
         const val KEY_IS_LOGGED_IN = "isLoggedIn"
+<<<<<<< HEAD
 
         const val KEY_RECEIVER_NAME = "receiverName"
         const val KEY_RECEIVER_MOBILE = "receiverMobile"
+=======
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
     }
 
     fun register(user: User) {
@@ -32,12 +35,17 @@ class SessionManager(val mContext: Context) {
         editor.commit()
     }
 
+<<<<<<< HEAD
     fun saveLoginData(email: String){
+=======
+    fun saveLoginData(email: String, password: String){
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
         editor.putString(KEY_EMAIL, email)
         editor.commit()
         mContext.toast("data saved in share preference file")
     }
 
+<<<<<<< HEAD
     fun saveReceiver(receiverName: String, receiverMobile: String){
         editor.putString(KEY_RECEIVER_NAME, receiverName)
         editor.putString(KEY_RECEIVER_MOBILE, receiverMobile)
@@ -46,6 +54,9 @@ class SessionManager(val mContext: Context) {
     }
 
     fun getUserName(): String? {
+=======
+    fun getUser(): String? {
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
         return sharedPreferences.getString(KEY_NAME, null)
     }
     fun getUserId(): String? {

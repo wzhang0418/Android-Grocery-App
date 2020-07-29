@@ -2,12 +2,18 @@ package com.apolis.groceryapplication1.database
 
 import android.content.ContentValues
 import android.content.Context
+<<<<<<< HEAD
 import android.database.DatabaseUtils
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 import android.util.Log
 import com.apolis.groceryapplication1.models.OrderResponse
 import com.apolis.groceryapplication1.models.OrderSummary
+=======
+import android.database.sqlite.SQLiteDatabase
+import android.database.sqlite.SQLiteOpenHelper
+import android.util.Log
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
 import com.apolis.groceryapplication1.models.Product
 
 class DBHelper(mContext: Context) : SQLiteOpenHelper(mContext, DATABASE_NAME, null, DATABASE_VERSION) {
@@ -66,17 +72,24 @@ class DBHelper(mContext: Context) : SQLiteOpenHelper(mContext, DATABASE_NAME, nu
     }
 
     // delete from employee where id = 1
+<<<<<<< HEAD
     fun deleteProduct(id: String){
+=======
+    fun deleteCart(id: String){
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
         val whereClause = "$COL_PID = ?"
         val whereArgs = arrayOf(id)
         database.delete(TABLE_NAME, whereClause, whereArgs)
         //db.delete(TABLE_NAME, "id = ?", arrayOf(id.toString()))
     }
 
+<<<<<<< HEAD
     fun getCartQuantity(): Long {
         return DatabaseUtils.queryNumEntries(database, "$TABLE_NAME")
     }
 
+=======
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
     // update employee set name = 'mark 2', email = 'm2@gmail.com' where id = 1
     fun updateProduct(updateProduct: Product){
         val whereClause = "$COL_PID = ?"
@@ -90,6 +103,7 @@ class DBHelper(mContext: Context) : SQLiteOpenHelper(mContext, DATABASE_NAME, nu
         database.update(TABLE_NAME, contentValues, whereClause, whereArgs)
     }
 
+<<<<<<< HEAD
     //update the quantity for a product
     fun updateQuantity(updateProduct: Product, quantity: Int){
         var whereClause = "$COL_PID = ?"
@@ -99,6 +113,8 @@ class DBHelper(mContext: Context) : SQLiteOpenHelper(mContext, DATABASE_NAME, nu
         database.update(TABLE_NAME, contentValues, whereClause, whereArgs)
     }
 
+=======
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
     // select * from employee
     // select id, name, email from employee
     // select * from employee where id=1
@@ -131,6 +147,7 @@ class DBHelper(mContext: Context) : SQLiteOpenHelper(mContext, DATABASE_NAME, nu
         return productList
     }
 
+<<<<<<< HEAD
     ////////////Change to OrderSummary class type/////////
     fun checkoutTotal(): ArrayList<OrderSummary> {
         var deliveryCharges: Double = 0.0
@@ -197,4 +214,6 @@ class DBHelper(mContext: Context) : SQLiteOpenHelper(mContext, DATABASE_NAME, nu
         database.delete(TABLE_NAME, null, null)
     }
 
+=======
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
 }

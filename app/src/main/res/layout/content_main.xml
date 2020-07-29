@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -84,5 +85,18 @@
 
 
     </RelativeLayout>
+=======
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World"
+        android:textSize="32dp"
+        android:layout_centerInParent="true"/>
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
 
 </RelativeLayout>

@@ -7,6 +7,7 @@
     <application
         android:allowBackup="true"
         android:hardwareAccelerated="true"
+<<<<<<< HEAD
         android:icon="@drawable/peach_logo"
         android:label="FreshMart"
         android:roundIcon="@drawable/peach_logo"
@@ -17,6 +18,15 @@
         <activity android:name=".activities.EditAddressActivity" />
         <activity android:name=".activities.MyAccountActivity" />
         <activity android:name=".activities.HomeActivity" />
+=======
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activities.HomeActivity"></activity>
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
         <activity android:name=".activities.LoginActivity" />
         <activity android:name=".activities.OrderConfirmationActivity" />
         <activity android:name=".activities.PaymentActivity" />
@@ -30,7 +40,10 @@
         <activity android:name=".activities.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

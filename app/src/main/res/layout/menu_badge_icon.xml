@@ -1,4 +1,5 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
     android:layout_width="40dp"
     android:layout_height="40dp"
     android:padding="3dp">
@@ -25,4 +26,29 @@
         android:textStyle="bold"/>
 
 
+=======
+    android:layout_width="48dp"
+    android:layout_height="fill_parent"
+    android:layout_gravity="right" >
+
+    <!-- Menu Item Image -->
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:clickable="true"
+        android:src="@drawable/red_circle" />
+
+    <!-- Badge Count -->
+    <TextView
+        android:id="@+id/text_view_menu_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="18dp"
+        android:text="99"
+        android:textSize="24dp"
+        android:textColor="#fff"
+        android:textStyle="bold"/>
+
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
 </RelativeLayout>

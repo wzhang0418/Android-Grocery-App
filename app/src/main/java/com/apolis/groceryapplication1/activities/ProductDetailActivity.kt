@@ -6,11 +6,17 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
+<<<<<<< HEAD
 import android.view.View
 import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.MenuItemCompat
+=======
+import android.widget.RelativeLayout
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
 import com.apolis.groceryapplication1.R
 import com.apolis.groceryapplication1.app.Endpoints
 import com.apolis.groceryapplication1.database.DBHelper
@@ -20,15 +26,21 @@ import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_product_detail.*
 import kotlinx.android.synthetic.main.activity_product_detail.view.*
 import kotlinx.android.synthetic.main.app_bar.*
+<<<<<<< HEAD
 import kotlinx.android.synthetic.main.menu_badge_icon.view.*
+=======
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
 
 class ProductDetailActivity : AppCompatActivity() {
 
     lateinit var dbHelper: DBHelper
 
+<<<<<<< HEAD
     var textViewCount: TextView? = null
     var count = 0
 
+=======
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_product_detail)
@@ -60,16 +72,22 @@ class ProductDetailActivity : AppCompatActivity() {
             dbHelper.addToCart(product)
             startActivity(Intent(this, CartDetailActivity::class.java))
         }
+<<<<<<< HEAD
         button_buy_now.setOnClickListener {
             startActivity(Intent(this, AddressActivity::class.java))
         }
     }
 
     //Cart icon event
+=======
+    }
+
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         val inflater: MenuInflater = menuInflater
         inflater.inflate(R.menu.menu_cart_icon, menu)
 
+<<<<<<< HEAD
         var item = menu.findItem(R.id.action_cart)
         MenuItemCompat.setActionView(item, R.layout.menu_badge_icon)
         var view = MenuItemCompat.getActionView(item)
@@ -94,6 +112,11 @@ class ProductDetailActivity : AppCompatActivity() {
     }
 
     //Press back button on menu bar
+=======
+        return true
+    }
+
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             android.R.id.home -> {
@@ -107,4 +130,8 @@ class ProductDetailActivity : AppCompatActivity() {
         return true
     }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
 }

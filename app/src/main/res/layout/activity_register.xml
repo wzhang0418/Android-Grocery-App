@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 <LinearLayout android:id="@+id/linear_layout_register"
     android:layout_height="match_parent"
+=======
+<LinearLayout android:layout_height="match_parent"
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
     android:layout_width="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
@@ -7,6 +11,7 @@
 
     <include layout="@layout/app_bar"/>
 
+<<<<<<< HEAD
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -19,10 +24,25 @@
             android:layout_height="wrap_content"
             android:text="Register"
             android:layout_centerHorizontal="true"
+=======
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_marginTop="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:layout_gravity="center"
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
             android:textSize="40dp"
             android:textStyle="bold"
             android:textColor="#000000"/>
 
+<<<<<<< HEAD
         <ImageView
             android:id="@+id/image_view_person_icon"
             android:layout_width="wrap_content"
@@ -124,12 +144,44 @@
                 android:hint="Mobile" />
 
         </com.google.android.material.textfield.TextInputLayout>
+=======
+        <EditText
+            android:id="@+id/edit_text_name_register"
+            android:layout_marginTop="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"/>
+        <EditText
+            android:id="@+id/edit_text_email_register"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"/>
+        <EditText
+            android:id="@+id/edit_text_password_register"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"/>
+
+        <EditText
+            android:id="@+id/edit_text_mobile_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:hint="Mobile" />
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
 
 
         <Button
             android:id="@+id/button_register"
+<<<<<<< HEAD
             android:layout_below="@+id/edit_layout_mobile"
             android:layout_marginTop="100dp"
+=======
+            android:layout_marginTop="80dp"
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/round_button"
@@ -137,7 +189,11 @@
             android:textSize="20dp"
             android:textColor="#fff"/>
 
+<<<<<<< HEAD
     </RelativeLayout>
+=======
+    </LinearLayout>
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
 
 
     <RelativeLayout
@@ -149,6 +205,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Already registered?"
+<<<<<<< HEAD
+=======
+            android:layout_marginTop="80dp"
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
             android:layout_marginLeft="120dp"/>
         <TextView
             android:id="@+id/text_view_click_here_to_login"
@@ -156,6 +216,10 @@
             android:layout_height="wrap_content"
             android:text="Click here"
             android:textColor="#000000"
+<<<<<<< HEAD
+=======
+            android:layout_marginTop="80dp"
+>>>>>>> 9d8b7eebba08273004465e73c702a9d3b1a4effa
             android:layout_marginLeft="8dp"
             android:layout_toRightOf="@id/text_view_already_registered"/>
         <View
